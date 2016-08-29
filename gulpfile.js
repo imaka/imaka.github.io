@@ -62,7 +62,7 @@ gulp.task('wiredep', function() {
  */
 gulp.task('inject', ['wiredep', 'styles'], function() {
     log('Wiring js and css into the html, after files are ready');
-    log('this is the destination: ' + config.client);
+    
     return gulp
         .src(config.index)
         .pipe(inject(config.js/*,'', config.jsOrder*/))
