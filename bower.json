@@ -1,0 +1,14 @@
+{
+  "name": "github.io",
+  "description": "github.io personal page",
+  "main": "gulpfile.js",
+  "authors": [
+    "Diego Perez"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/imaka/imaka.github.io",
+  "dependencies": {
+    "bootstrap": "3.3.4", 
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
