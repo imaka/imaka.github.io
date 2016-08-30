@@ -78,7 +78,7 @@ gulp.task('inject', ['wiredep', 'styles'], function() {
 gulp.task('optimize', ['inject'], function() {
     log('Optimizing the js, css, and html');
 
-    var assets = $.useref.assets({searchPath: './'});
+    var assets = $.useref.assets({searchPath: ['./bower_components','./']});
     // Filters are named for the gulp-useref path
     var cssFilter = $.filter('**/*.css', {restore: true});
     var jsAppFilter = $.filter('**/' + config.optimized.app, {restore: true});
