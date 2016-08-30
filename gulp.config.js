@@ -5,9 +5,9 @@ module.exports = function() {
         //exclude: ,
         ignorePath: '../..'
     };
-    var client = './';
+    var build = './';
     var src = './src/';
-    var temp = './.tmp/';
+    var styles = './src/styles/';
     
     var config = {
         // all javascript that we want to vet
@@ -16,14 +16,19 @@ module.exports = function() {
             src + '**/*.js'
         ],    
         bower: bower,
-        client: client,
-        css: client + 'styles/styles.css',
-        index: client + 'index.html',
+        build: build,
+        css: styles + '**/*.css',
+        index: src + 'index.html',
         js: src + '**/*.js',
         // use on ng projects when injecting 
         // jsOrder: '',
-        sass: src + 'styles/**/*.scss',
-        temp: temp
+        optimized: {
+            app: 'app.js',
+            lib: 'lib.js'
+        },
+        sass: styles + '**/*.scss',
+        src: src,
+        styles: styles
     };
     
     /*
