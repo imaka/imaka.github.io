@@ -5,9 +5,12 @@ module.exports = function() {
         //exclude: ,
         ignorePath: '../..'
     };
-    var build = './';
-    var src = './src/';
-    var styles = './src/styles/';
+    var build = './build/';
+    var src = './';
+    // use on ng projects 
+    // var srcApp: src + '/app/',
+    var styles = src + 'styles/';
+    var js = src + 'js/';
     
     var config = {
         // all javascript that we want to vet
@@ -19,7 +22,7 @@ module.exports = function() {
         build: build,
         css: styles + '**/*.css',
         index: src + 'index.html',
-        js: src + '**/*.js',
+        js: js + '**/*.js',
         // use on ng projects when injecting 
         // jsOrder: '',
         optimized: {
