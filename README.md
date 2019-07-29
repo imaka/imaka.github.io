@@ -1,3 +1,1 @@
-# imaka's profile page
-
-How cool is that?
+# Diego Pérez's profile page 👌
