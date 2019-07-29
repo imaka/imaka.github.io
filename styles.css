@@ -5,7 +5,6 @@ html {
   line-height: 1.15;
 }
 body {
-  max-width: 90%;
   margin: 0 auto;
   padding: 2em;
   --dark-blue: #396ccf;
@@ -19,9 +18,25 @@ body {
 a {
   color: var(--dark-grey);
   text-decoration: none;
+  word-break: break-all;
 }
 a:hover {
   color: var(--light-grey);
+}
+div.row {
+  margin-bottom: 1rem;
+}
+div.row.double-space {
+  margin-bottom: 2rem;
+}
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
 }
 img#profile {
   border-color: var(--pink);
@@ -41,13 +56,16 @@ section#card {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  padding: 1rem 4rem;
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 1rem 2rem;
 }
 section#card h1 {
   font-size: inherit;
   font-weight: normal;
   margin: inherit;
 }
+
 .black {
   color: black;
 }
