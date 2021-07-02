@@ -13,6 +13,7 @@ body {
   --light-grey: #d0d0d0;
   --pink: #ba81b2;
   --red: #de4b4e;
+  --slate-blue: #6c7aba;
   --yellow: #f9ec79;
 }
 a {
@@ -75,6 +76,9 @@ section#card h1 {
 }
 .pink {
   color: var(--pink);
+}
+.slate-blue {
+  color: var(--slate-blue);
 }
 .red {
   color: var(--red);
